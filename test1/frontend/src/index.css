@@ -1,0 +1,304 @@
+body{
+  height:750px;
+  background:#dadde1;
+	
+}
+.fb-header-base{
+	width:100%;
+	height:90px;
+	position:absolute;
+	top:0;
+	left:0;
+	color:white;
+	z-index:7;
+	font-family:verdana;
+	-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+}
+.fb-header{
+	width:100%;
+	height:90px;
+	position:absolute;
+	background:red;
+	top:0;
+	left:0;
+	color:white;
+	z-index:7;
+	font-family:verdana;
+	
+}
+#img1{
+    left: 156px;
+    height: 51px;
+    width: 100px;
+    top: 10px;
+}
+#form1{
+	left:750px;
+	height:60px;
+	width:180px;
+	top:20px;
+	font-family:verdana;
+	font-size:12px;
+}
+#form2{
+	left:940px;
+	height:60px;
+	width:250px;
+	top:20px;
+	font-family:verdana;
+	font-size:12px;
+}
+.submit1 {
+	left: 1211px;
+	top: 39px;
+	background: white;
+	color: black;
+	position: absolute;
+	z-index: 18;
+	height: 29px;
+	width: 70px;
+	cursor: pointer;
+}
+.fb-body{
+  position: absolute;
+  left: -65px;
+  top: 27px;
+  width: 100%;
+  height: 645px;
+	
+
+}
+#intro1{
+	left:178px;
+	top:20px;
+	font-family:verdana;
+	font-size:20px;
+	color:#142170;
+	height:75px;
+	width:550px;
+}
+#intro2{
+	left:720px;
+	top:20px;
+	font-family:verdana;
+	font-size:30px;
+	color:#000;
+	font-weight:bold;
+	height:75px;
+	width:500px;
+}
+#img2{
+	top:130px;
+	left:817px;
+	width:537px;
+	height:195px;
+}
+#intro3{
+	left:817px;
+	top:70px;
+	font-family:verdana;
+	font-size:18px;
+	color:#000;
+	height:50px;
+	width:300px;
+}
+#form3{
+	top:120px;
+	left:750px;
+	font-family:verdana;
+	font-size:20px;
+	color:#142170;
+	width:450px;
+	height:495px;
+	
+}
+#namebox{
+	width:200px;
+	height:40px;
+	border-radius:5px 5px 5px 5px;
+	background:white;
+	padding:10px;
+	font-size:18px;
+	margin-top:8px;
+	border-width: 1px;
+	border-style:solid;
+	border-color: gray;
+}
+#mailbox{
+	width:408px;
+	height:40px;
+	border-radius:5px 5px 5px 5px;
+	background:white;
+	padding:10px;
+	font-size:18px;
+	margin-top:8px;
+	border-width: 1px;
+	border-style:solid;
+	border-color: gray;
+}
+#r-b{
+	font-size:12px;
+	height:15px;
+	width:15px;
+}
+.button2{
+	width:250px;
+	height:40px;
+	left:750px;
+	top:625px;
+	background:green;
+	font-family:verdana;
+	font-size:18px;
+	color:white;
+	border-radius:5px 5px 5px 5px;
+	border-width: 1px;
+	border-style:solid;
+	border-color: gray;
+	cursor:pointer;
+	outline:none;
+	
+}
+#intro4{
+	font-family:verdana;
+	font-size:12px;
+	color:gray;
+	
+}
+#intro5{
+	font-family:verdana;
+	font-size:14px;
+	color:gray;
+	
+}
+.fb-body-footer{
+	width:100%;
+	position:absolute;
+	left:0px;
+	height:80px;
+	background:white;
+	top:700px;
+	
+}
+#fb-body-footer-base{
+	width:900px;
+	top:15px;
+	left:200px;
+	color:blue;
+	height:60px;
+}
+.links {
+	font-family: verdana;
+	position: relative;
+	left: 313px;
+	background: blue;
+	color: white;
+	width: 183px;
+	font-size: 17px;
+	height: 40px;
+	border-radius: 5px 5px 5px 5px;
+}
+.link2{
+	font-family: verdana;
+	position: relative;
+	left: 171px;
+	background: green;
+	color: white;
+	width: 183px;
+	font-size: 17px;
+	height: 40px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.link0{
+	font-family: verdana;
+	position: relative;
+	left:	28px;
+	background: orange;
+	color: white;
+	width: 183px;
+	font-size: 17px;
+	height: 40px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.homepage {
+	float: right;
+	position: relative;
+	right: 30px;
+	font-size: 30px;
+	font-family: sans-serif;
+	text-decoration: underline;
+}
+
+.refferal{
+	width: 59%;
+}
+.gender {
+	text-align: center;
+	position: relative;
+	left: -90px;
+	top: 13px;
+}
+
+.h2-heading {
+	position: relative;
+	text-align: center;
+	font-size: 49px;
+	left:160px;
+}
+
+.ads{
+	font-size: 32px;
+	position: relative;
+	right: 400px;
+	top: 40px;
+
+}
+
+.header-intro{
+float: left;
+margin-left: 49px;
+font-size: 49px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer {
+	background: black;
+	color: white;
+	position: relative;
+	top: 105px;
+	margin: 100x;
+	height: 100px;
+}
+.register_user {
+	float: left;
+    margin-top: 46px;
+		font-size: 27px;
+		margin-left: 50px;
+}
+
+.styling {
+	position: relative;
+	left: 100px;
+	padding-left:20px;
+	background: white;
+	color: black;
+	font-family: verda;
+}
+.heading_text {
+	text-align: center;
+    font-size: 44px;
+    text-decoration: underline;
+}
+.used_refferal {
+	float: right;
+	margin-top: 46px;
+	font-size: 27px;
+	margin-right: 280px;
+}
+@media (min-width: 992px){
+[class*="col-md-2"] {
+    position: relative;
+    width: 16.66666667%;
+    margin-top: 56px;
+}
+}
