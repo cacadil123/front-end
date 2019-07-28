@@ -68,13 +68,15 @@ class Header extends Component {
   .finally(function () {
     // always executed
   });
- 
-  let result = JSON.parse(localStorage.getItem('data') && localStorage.getItem('data').length >0 && localStorage.getItem('data')).map(({ refferalCode }) => refferalCode)
-  let removeEmpty=result.filter(v=>v!='');
-  let finalValue = this.getModes(removeEmpty);
-  this.setState({totalUser: localStorage.getItem('total_user')});
-  this.setState({mostUsedRef: finalValue[0]});
+  if(localStorage.getItem('data')!==null){
+    let result = JSON.parse(localStorage.getItem('data')).map(({ refferalCode }) => refferalCode)
+    let removeEmpty=result.filter(v=>v!='');
+    let finalValue = this.getModes(removeEmpty);
+    this.setState({totalUser: localStorage.getItem('total_user')});
+    this.setState({mostUsedRef: finalValue[0]});
+    }
   }
+  
   onChange = e => this.setState({ [e.target.name]: e.target.value })
   notify = (message) => (toast.success(message, {
     position: toast.POSITION.TOP_CENTER
