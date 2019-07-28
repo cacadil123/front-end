@@ -1,8 +1,8 @@
 const FRONTEND_DEV_URLS = [ 'http://localhost:3001' ];
 
 const FRONTEND_PROD_URLS = [
-  'https://www.yourdomain.com',
-  'https://yourdomain.com'
+  'http://13.59.25.159/',
+  'http://13.59.25.159/'
 ];
 
 module.exports = process.env.NODE_ENV === 'production'
