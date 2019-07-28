@@ -69,7 +69,7 @@ class Header extends Component {
     // always executed
   });
  
-  let result = JSON.parse(localStorage.getItem('data')).map(({ refferalCode }) => refferalCode)
+  let result = JSON.parse(localStorage.getItem('data') && localStorage.getItem('data').length >0 && localStorage.getItem('data')).map(({ refferalCode }) => refferalCode)
   let removeEmpty=result.filter(v=>v!='');
   let finalValue = this.getModes(removeEmpty);
   this.setState({totalUser: localStorage.getItem('total_user')});
