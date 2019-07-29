@@ -78,26 +78,29 @@ class HomePage extends Component {
           // always executed
         });
        
-        let result = JSON.parse(localStorage.getItem('topTen') && localStorage.getItem('topTen')).map(({ refferalCode }) => refferalCode)
+        if(localStorage.getItem('topTen')!==null){
+          let result = JSON.parse(localStorage.getItem('topTen') && localStorage.getItem('topTen')).map(({ refferalCode }) => refferalCode)
         
-        let removeEmpty=result.filter(v=>v!='');
+          let removeEmpty=result.filter(v=>v!='');
+  
+    let finalValue = this.getModes(removeEmpty);
+    localStorage.setItem('noCount', JSON.stringify(finalValue));
+          // var jobsUnique = removeEmpty.filter(function(item, index){
+          //   return removeEmpty.indexOf(item) >= index;
+          // });
+          // let finalValue = this.getModes(removeEmpty);
+          // console.log(jobsUnique)
+          const objectvalue = (removeEmpty);
+          localStorage.setItem('finalValuess',JSON.stringify(objectvalue))
+   
 
-  let finalValue = this.getModes(removeEmpty);
-  console.log('kdd',finalValue);
-  localStorage.setItem('noCount', JSON.stringify(finalValue));
-        // var jobsUnique = removeEmpty.filter(function(item, index){
-        //   return removeEmpty.indexOf(item) >= index;
-        // });
-        // let finalValue = this.getModes(removeEmpty);
-        // console.log(jobsUnique)
-        const objectvalue = (removeEmpty);
-        localStorage.setItem('finalValuess',JSON.stringify(objectvalue))
-    
+        }
+          
     }
 
     render() { 
         const Reff = localStorage.getItem('topTen') && JSON.parse(localStorage.getItem('topTen'));
-        console.log('OPIIOI', Reff);
+       
         const count = JSON.parse(localStorage.getItem('noCount'));
  return ( 
     <div>
@@ -114,8 +117,8 @@ class HomePage extends Component {
             <div className="dataTable">
                   <h1>Refferal Information</h1>
                     <Datatble
-                      agentDashboardData={Reff && Reff}
-                      noCount={count}
+                      agentDashboardData={Reff && Reff || []}
+                      noCount={count && count}
                     />
 
                   </div>

@@ -11,7 +11,7 @@ class App extends Component {
   render(){
     return(
 <Router>
-        <Route exact path="/homePage" component={HomePage} />
+        <PrivateRoute exact path="/homePage" component={HomePage} />
         <Route exact path="/" component={Header} />
 
         </Router>

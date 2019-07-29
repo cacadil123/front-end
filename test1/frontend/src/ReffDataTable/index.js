@@ -36,6 +36,7 @@ const dataMapping = (data, noCount) => {
 
 const DatatablePage = props => {
   const { agentDashboardData, noCount } = props;
+  console.log('dd', noCount)
   const rowData = dataMapping(agentDashboardData, noCount);
   
     const data = {
