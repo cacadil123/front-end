@@ -9,6 +9,7 @@ class HomePage extends Component {
           topTen: [],
         }
       }
+      
     handleLogout = () => {
      localStorage.removeItem('token');   
      window.location.assign('http://localhost:3000/');
