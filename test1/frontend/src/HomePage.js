@@ -63,7 +63,7 @@ class HomePage extends Component {
   // }
 
     componentDidMount(){
-        Axios.get('http://localhost:8001/api/users/all-users')
+        Axios.get('http://18.220.236.209/api/users/all-users')
         .then(function (response) {
           // handle success
           console.log('response', response.data.users.length);

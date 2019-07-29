@@ -8,7 +8,7 @@ const postStripeCharge = res => (stripeErr, stripeRes) => {
     const {amount,balance_transaction,description,receipt_url} = stripeRes;
     axios({
       method: 'post',
-      url: 'http://localhost:8001/api/users/payment-info',
+      url: 'http://18.220.236.209/api/users/payment-info',
       data: {
       amount,
       balance_transaction,

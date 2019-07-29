@@ -53,7 +53,7 @@ class Header extends Component {
   }
   
   componentDidMount= () => {
-    axios.get('http://localhost:8001/api/users/all-users')
+    axios.get('http://18.220.236.209/api/users/all-users')
   .then(function (response) {
     // handle success
     console.log('response', response.data.users.length);
@@ -137,7 +137,7 @@ class Header extends Component {
      
      axios({
       method: 'post',
-      url: 'http://localhost:8001/api/users/register',
+      url: 'http://18.220.236.209/api/users/register',
       data: {
         ...this.state
       },
@@ -165,7 +165,7 @@ class Header extends Component {
     const {email, password} = this.state;
     axios({
       method: 'post',
-      url: 'http://localhost:8001/api/users/login',
+      url: 'http://18.220.236.209/api/users/login',
       data: {
         email,
         password
@@ -176,7 +176,7 @@ class Header extends Component {
     }).then((response)=>{
       localStorage.setItem('token', response && response.data.token);
      if(response){
-       axios.get('http://localhost:8001/api/users/current', { headers: { Authorization: response.data.token }})
+       axios.get('http://18.220.236.209/api/users/current', { headers: { Authorization: response.data.token }})
       .then(response => {
         this.notify("You are logged In!");
         if(response.data.status===200){
